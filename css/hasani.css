@@ -1,0 +1,577 @@
+html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: "Lato", sans-serif;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav {
+    background-color: #111;
+    color: white;
+    padding: 20px 50px;
+  }
+  
+  .ehnavTop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .ehlogoja{
+    max-width: 11rem;
+    margin-top: 15px;
+  }
+  
+  .ehsearch {
+    display: flex;
+    align-items: center;
+    background-color: gray;
+    padding: 10px 20px;
+    border-radius: 10px;
+  }
+  
+  .ehsearchInput {
+    border: none;
+    background-color: transparent;
+  }
+  
+  .ehsearchInput::placeholder {
+    color: lightgray;
+  }
+  
+  .ehlimitedOffer {
+    font-size: 20px;
+    border-bottom: 2px solid green;
+    cursor: pointer;
+  }
+  
+  .ehnavBottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .ehmenuItem {
+    margin-right: 50px;
+    cursor: pointer;
+    color: lightgray;
+    font-weight: 400;
+  }
+  
+  .ehslider {
+    background: url("./hasani.img/wall.jpg");
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
+    overflow: hidden;
+  }
+  
+  .ehsliderWrapper {
+    display: flex;
+    width: 500vw;
+    transition: all 1.5s ease-in-out;
+  }
+  
+  .ehsliderItem {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  
+  .ehsliderBg {
+    width: 750px;
+    height: 750px;
+    border-radius: 50%;
+    position: absolute;
+  }
+  
+  .ehsliderImg {
+    z-index: 1;
+  }
+  
+  .ehsliderTitle {
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    font-size: 60px;
+    font-weight: 900;
+    text-align: center;
+    color: white;
+    z-index: 1;
+  }
+  
+  .ehsliderPrice {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    font-size: 60px;
+    font-weight: 300;
+    text-align: center;
+    color: white;
+    border: 1px solid gray;
+    z-index: 1;
+  }
+  
+  .ehbuyButton {
+    position: absolute;
+    margin-top: 7%;
+    margin-right: 3%;
+    top: 50%;
+    right: 10%;
+    font-size: 30px;
+    font-weight: 900;
+    color: white;
+    border: 1px solid gray;
+    background-color: black;
+    z-index: 1;
+    cursor: pointer;
+  }
+  
+  .ehbuyButton:hover {
+    background-color: white;
+    color: black;
+  }
+  
+  .ehsliderItem:nth-child(1) .ehsliderBg {
+    background-color: #369e62;
+  }
+  .ehsliderItem:nth-child(2) .ehsliderBg {
+    background-color: rebeccapurple;
+  }
+  .ehsliderItem:nth-child(3) .ehsliderBg {
+    background-color: teal;
+  }
+  .ehsliderItem:nth-child(4) .ehsliderBg {
+    background-color: cornflowerblue;
+  }
+  .ehsliderItem:nth-child(5) .ehsliderBg {
+    background-color: rgb(124, 115, 80);
+  }
+  
+  .ehsliderItem:nth-child(1) .ehsliderPrice {
+    color: #369e62;
+  }
+  .ehsliderItem:nth-child(2) .ehsliderPrice {
+    color: white;
+  }
+  .ehsliderItem:nth-child(3) .ehsliderPrice {
+    color: teal;
+  }
+  .ehsliderItem:nth-child(4) .ehsliderPrice {
+    color: cornflowerblue;
+  }
+  .ehsliderItem:nth-child(5) .ehsliderPrice {
+    color: cornsilk;
+  }
+  
+  .ehfeatures {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+  }
+  
+  .ehfeature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .ehfeatureIcon {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .ehfeatureTitle {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 20px;
+  }
+  
+  .ehfeatureDesc {
+    color: gray;
+    width: 50%;
+    height: 100px;
+  }
+  
+  .ehproduct {
+    display:flex;
+    align-items: center;
+    height: 100vh;
+    background-color: whitesmoke;
+    position: relative;
+    clip-path: polygon(0 15%, 100% 0, 100% 100%, 0% 100%);
+  }
+  
+  .ehpayment {
+    width: 500px;
+    height: 500px;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding: 10px 50px;
+    display: none;
+    flex-direction: column;
+    -webkit-box-shadow: 0px 0px 13px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 0px 13px 2px rgba(0, 0, 0, 0.3);
+  }
+  
+  .ehpayTitle {
+    font-size: 20px;
+    color: lightgray;
+  }
+  
+  label {
+    font-size: 14px;
+    font-weight: 300;
+  }
+  
+  .ehpayInput {
+    padding: 10px;
+    margin: 10px 0px;
+    border: none;
+    border-bottom: 1px solid gray;
+  }
+  
+  .ehpayInput::placeholder {
+    color: rgb(163, 163, 163);
+  }
+  
+  .ehcardIcons {
+    display: flex;
+  }
+  
+  .ehcardIcon {
+    margin-right: 10px;
+  }
+  
+  .ehcardInfo {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .ehsm {
+    width: 30%;
+  }
+  
+  .ehpayButton {
+    position: absolute;
+    height: 40px;
+    bottom: -40;
+    width: 100%;
+    left: 0;
+    -webkit-box-shadow: 0px 0px 13px 2px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 0px 13px 2px rgba(0, 0, 0, 0.3);
+    background-color: #369e62;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .ehclose {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background-color: gray;
+    color: white;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 2px;
+  }
+  
+  .ehproductImg {
+    width: 50%;
+  }
+  
+  .ehproductDetails {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 10%;
+    right: 0;
+    width: 40%;
+    padding: 50px;
+  }
+  
+  .ehproductTitle {
+    font-size: 75px;
+    font-weight: 900;
+  }
+  
+  .ehproductPrice{
+    margin-top: 0%;
+  }
+
+  .ehproductDesc {
+    font-style: 24px;
+    color: gray;
+  }
+  
+  .ehsizes {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  
+  .ehcolor {
+    width: 32px;
+    height: 32px;
+    border-radius: 5px;
+    background-color: black;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  
+  .ehcolor:last-child {
+    background-color: darkblue;
+  }
+  
+  .ehsize {
+    padding: 5px 20px;
+    border: 1px solid black;
+    margin-right: 10px;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  
+  .ehproductButton {
+    float: right;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  
+  .ehproductButton:hover {
+    background-color: white;
+    color: black;
+  }
+  
+  .ehgallery {
+    padding: 50px;
+    display: flex;
+  }
+  
+  .ehgalleryItem {
+    flex: 1;
+    padding: 50px;
+  }
+  
+  .ehgalleryImg {
+    width: 100%;
+  }
+  
+  .ehnewSeason {
+    display: flex;
+  }
+  
+  .ehnsItem {
+    flex: 1;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .ehnsImg {
+    width: 100%;
+    height: 500px;
+  }
+  
+  .ehnsTitle {
+    font-size: 40px;
+  }
+  
+  .ehnsButton {
+    padding: 15px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  
+  footer {
+    display: flex;
+  }
+  
+  .ehfooterLeft {
+    flex: 2;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+  }
+  
+  .ehfMenuTitle {
+    font-size: 16px;
+  }
+  
+  .ehfList {
+    padding: 0;
+    list-style: none;
+  }
+  
+  .ehfListItem {
+    margin-bottom: 10px;
+    color: gray;
+    cursor: pointer;
+  }
+  
+  .ehfooterRight {
+    flex: 1;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .ehfInput {
+    padding: 5px;
+  }
+  
+  .ehfButton {
+    padding: 5px;
+    background-color: black;
+    color: white;
+  }
+  
+  .ehfIcons{
+    display: flex;
+  }
+  
+  .ehfIcon{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+  }
+  
+  .ehcopyright{
+    font-weight: 300;
+    font-size: 14px;
+  }
+  
+  @media screen and (max-width:480px) {
+    nav{
+      padding: 20px;
+    }
+  
+    .ehsearch{
+      display: none;
+    }
+  
+    .ehnavBottom{
+      flex-wrap: wrap;
+    }
+  
+    .ehmenuItem{
+      margin: 20px;
+      font-weight: 700;
+      font-size: 20px;
+    }
+  
+    .ehslider{
+      clip-path: none;
+    }
+  
+    .ehsliderImg{
+      width: 90%;
+    }
+  
+    .ehsliderBg{
+      width: 100%;
+      height: 100%;
+    }
+  
+    .ehsliderTitle{
+      display: none;
+    }
+  
+    .ehsliderPrice{
+      top: unset;
+      bottom: -50;
+      left: 0;
+      background-color: lightgrey;
+    }
+  
+    .ehbuyButton{
+      right: 0;
+      top: 0;
+    }
+  
+    .ehfeatures{
+      flex-direction: column;
+    }
+  
+    .ehproduct{
+      clip-path: none ;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .ehproductImg{
+      width: 80%;
+    }
+  
+    .ehproductDetails{
+      width: 100%;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      position: relative;
+      top: 0;
+    }
+  
+    .ehproductTitle{
+      font-size: 50px;
+      margin: 0;
+    }
+  
+    .ehgallery{
+      display: none;
+    }
+  
+    .ehnewSeason{
+      flex-direction: column;
+    }
+  
+    .ehnsItem:nth-child(2){
+      padding: 50px;
+    }
+  
+    footer{
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .ehfooterLeft{
+      padding: 20px;
+      width: 90%;
+    }
+  
+    .ehfooterRight{
+      padding: 20px;
+      width: 90%;
+      align-items: center;
+      background-color: whitesmoke;
+    }
+  
+    .ehspayment{
+      width: 90%;
+      padding: 20px;
+    }
+  }

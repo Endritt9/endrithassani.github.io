@@ -1,0 +1,179 @@
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+nav {
+background-color: #111;
+color: white;
+padding: 20px 50px;
+}
+
+.ehnavTop {
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+.ehlogoja{
+max-width: 11rem;
+margin-top: 15px;
+}
+
+.ehsearch {
+display: flex;
+align-items: center;
+background-color: gray;
+padding: 10px 20px;
+border-radius: 10px;
+}
+
+.ehsearchInput {
+border: none;
+background-color: transparent;
+}
+
+.ehsearchInput::placeholder {
+color: lightgray;
+}
+
+.ehlimitedOffer {
+font-size: 20px;
+border-bottom: 2px solid green;
+cursor: pointer;
+}
+
+.ehnewSeason {
+display: flex;
+}
+
+.ehnsItem {
+flex: 1;
+background-color: black;
+color: white;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+text-align: center;
+}
+
+.ehnsImg {
+width: 100%;
+height: 500px;
+}
+
+.ehnsTitle {
+font-size: 40px;
+}
+
+.ehnsButton {
+padding: 15px;
+font-weight: 600;
+cursor: pointer;
+}
+
+.ehtextiii{
+    text-align: center;
+}
+
+.ehlista{
+list-style: none;
+}
+
+footer {
+display: flex;
+}
+
+.ehfooterLeft {
+flex: 2;
+display: flex;
+justify-content: space-between;
+padding: 50px;
+}
+
+.ehfMenuTitle {
+font-size: 16px;
+}
+
+.ehfList {
+padding: 0;
+list-style: none;
+}
+
+.ehfListItem {
+margin-bottom: 10px;
+color: gray;
+cursor: pointer;
+}
+
+.ehfooterRight {
+flex: 1;
+padding: 50px;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+}
+
+.ehfInput {
+padding: 5px;
+}
+
+.ehbuttoni {
+padding: 5px;
+border-radius: 6px white;
+}
+
+.ehfIcons{
+display: flex;
+}
+
+.ehfIcon{
+width: 20px;
+height: 20px;
+margin-right: 10px;
+}
+
+.ehtexti {
+margin-top: 3%;
+margin-left: 3%;
+margin-right: 5%;
+}
+
+.ehcopyright{
+font-weight: 300;
+font-size: 14px;
+}
+
+@media screen and (max-width:480px) {
+nav{
+padding: 20px;
+}
+
+.ehsearch{
+display: none;
+}
+
+.ehnavBottom{
+flex-wrap: wrap;
+}
+
+}
+
+img {
+max-width: 100%;
+height: auto;
+}
+
+a {
+color: #0066cc;
+text-decoration: none;
+}
+
+a:hover {
+text-decoration: underline;
+}
